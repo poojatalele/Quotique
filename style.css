@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital@0;1&family=Varela+Round&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Varela Round', sans-serif;
+  min-height: 100vh;
+  background-color: rgb(159, 80, 105);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Quote-box {
+  width: 90%; /* Adjusted width for responsiveness */
+  max-width: 700px; /* Added max-width for larger screens */
+  border-radius: 15px;
+  /* padding: 30px 30px 25px; */
+  padding: 45px 35px 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-between;
+  background-color: white;
+  margin: 35px 0;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.9);
+}
+
+.Quote-box h2 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.content {
+  margin: 10px;
+}
+
+.content .quote-area {
+  display: flex;
+  justify-content: center;
+}
+
+.quote-area .i {
+  font-size: 15px;
+}
+
+.quote-area i:first-child {
+  margin: 3px 10px 0 0;
+}
+
+.quote-area i:last-child {
+  display: flex;
+  align-items: flex-end;
+  margin: 0 0 3px 10px;
+}
+
+.quote-area .quote {
+  font-size: 25px;
+  text-align: center;
+  word-break: normal;
+}
+
+.content .author {
+  display: flex;
+  margin-top: 20px;
+  align-items: flex-end;
+  font-size: 20px;
+  color: gray;
+  font-family: 'PT Serif', serif;
+  justify-content: flex-end; /* Align author to the end */
+}
+
+.author span:first-child {
+  margin: -7px 5px 0 0;
+}
+
+.Quote-box .buttons {
+  border-top: 3px solid;
+}
+
+.buttons .features {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  justify-content: space-between;
+}
+
+.features ul {
+  display: flex;
+}
+
+.features ul li {
+  list-style: none;
+  margin: 0 5px;
+  height: 60px;
+  width: 60px;
+  display: flex;
+  color: black;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 2px solid;
+  cursor: pointer;
+}
+
+.features ul li:hover {
+  color: white;
+  background: black;
+}
+
+.features button {
+  border: none;
+  outline: none;
+  padding: 15px 20px;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 30px;
+  background: black;
+}
+
+button.loading {
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+#credit {
+  font-size: medium;
+  text-align: center;
+  color: black;
+  font-weight: 500;
+  font-style: italic; /* Corrected font-style property */
+}
